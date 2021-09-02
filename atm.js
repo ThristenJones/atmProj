@@ -21,7 +21,7 @@ console.log(accountFile.balance)
 
 function validatePin(){
     usersPin =prompt ("Please enter your pin")
-    if(usersPin === pin){
+    if(usersPin === accountFile.pin){
         return true;
     }
 }

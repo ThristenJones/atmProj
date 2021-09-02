@@ -1,21 +1,21 @@
 "use strict"
 let atmFile = require('./atm');
-console.log(atmFile);
+
 
 while(!validatePin){
-alert("Sorry wrong pin, re-type pin please.")
+console.log("Sorry wrong pin, re-type pin please.")
 }
 
 let choice = prompt("Make a slection")
 switch(choice){
 case '1':
-    getBalance
+    atmFile.getBalance
     break;
 case '2':
-    withdraw
+    atmFile.withdraw
     break;
 case '3':
-    deposit
+    atmFile.deposit
     break;
 default:
     alert("Invalid Selection, please try agian.")
