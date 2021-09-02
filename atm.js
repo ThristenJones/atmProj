@@ -4,7 +4,7 @@ const prompt = require('prompt-sync')();
 
 function getBalance(){
 let usersBalance = accountFile.balance
-return usersBalance;
+console.log(usersBalance);
 }
 
 function withdraw(){
