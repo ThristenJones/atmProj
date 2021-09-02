@@ -2,9 +2,12 @@
 let atmFile = require('./atm');
 const prompt = require('prompt-sync')();
 
-let myPin = atmFile.validatepin()
+let myPin = atmFile.validatePin()
 while(!myPin){
 console.log("Sorry wrong pin, re-type pin please.")
+}
+if(myPin){
+mainMenu()
 }
 
 function mainMenu(){
