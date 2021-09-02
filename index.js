@@ -18,6 +18,6 @@ case '3':
     atmFile.deposit
     break;
 default:
-    alert("Invalid Selection, please try agian.")
+    console.log("Invalid Selection, please try agian.")
 }
 
