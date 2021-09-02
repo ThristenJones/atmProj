@@ -1,8 +1,9 @@
 "use strict"
 let atmFile = require('./atm');
+const prompt = require('prompt-sync')();
 
 
-while(!validatePin){
+while(!atmFile.validatePin){
 console.log("Sorry wrong pin, re-type pin please.")
 }
 
