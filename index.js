@@ -7,6 +7,7 @@ while(!myPin){
 console.log("Sorry wrong pin, re-type pin please.")
 }
 
+function mainMenu(){
 let choice = prompt("Make a slection")
 switch(choice){
 case '1':
@@ -21,4 +22,4 @@ case '3':
 default:
     console.log("Invalid Selection, please try agian.")
 }
-
+}
