@@ -9,14 +9,14 @@ return usersBalance;
 
 function withdraw(){
     usersBalance = prompt("how much would you like to withdraw?")
-    let newBalance = balance - withdraw;
-    return newBalance;
+    accountFile.balance = accountFile.balance - usersBalance;
+    console.log(accountFile.balance);
 }
 
-function deposit(balance, deposit){
+function deposit(){
 usersBalance = prompt("How much would you like to deposit")
-let newBalance = balance + deposit
-return newBalance
+accountFile.balance = accountFile.balance + usersBalance;
+console.log(accountFile.balance)
 }
 
 function validatePin(){
