@@ -1,11 +1,13 @@
 "use strict"
+let accountFile = require('./account');
+const prompt = require('prompt-sync')();
 
 function getBalance(){
-let usersBalance = balance
+let usersBalance = accountFile.balance
 return usersBalance;
 }
 
-function withdraw(balance, withdraw){
+function withdraw(){
     usersBalance = prompt("how much would you like to withdraw?")
     let newBalance = balance - withdraw;
     return newBalance;
